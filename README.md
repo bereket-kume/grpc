@@ -1,4 +1,4 @@
-# ReciteLabs gRPC Payment Plugin
+# gRPC Payment Plugin
 
 This project implements a gRPC-based payment plugin system with a client and server implementation.
 
