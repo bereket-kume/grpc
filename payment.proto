@@ -3,7 +3,7 @@ syntax = "proto3";
 
 package plugin;
 
-option go_package = "github.com/recitelabs/grpc/plugin";
+option go_package = "github.com/recitelabs/grpc/proto";
 
 service BankPlugin {
   rpc SendPayment(PaymentRequest) returns (PaymentResponse);

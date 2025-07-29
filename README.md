@@ -11,9 +11,13 @@ grpc/
 ├── compile.sh            # Script to compile proto files
 ├── go.mod               # Go module file
 ├── plugins/
-│   └── bankabc/
-│       └── main.go      # BankABC plugin server
-└── github.com/recitelabs/grpc/plugin/
+│   ├── bankabc/
+│   │   └── main.go      # BankABC plugin server
+│   ├── bankxyz/
+│   │   └── main.go      # BankXYZ plugin server
+│   └── template/
+│       └── main.go      # Template for new plugins
+└── proto/
     ├── payment.pb.go    # Generated message types
     └── payment_grpc.pb.go # Generated gRPC service
 ```

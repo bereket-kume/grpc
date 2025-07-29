@@ -6,7 +6,7 @@
 // 	protoc        v3.12.4
 // source: payment.proto
 
-package plugin
+package proto
 
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
@@ -260,7 +260,7 @@ const file_payment_proto_rawDesc = "" +
 	"\n" +
 	"BankPlugin\x12>\n" +
 	"\vSendPayment\x12\x16.plugin.PaymentRequest\x1a\x17.plugin.PaymentResponse\x12<\n" +
-	"\vCheckStatus\x12\x15.plugin.StatusRequest\x1a\x16.plugin.StatusResponseB#Z!github.com/recitelabs/grpc/pluginb\x06proto3"
+	"\vCheckStatus\x12\x15.plugin.StatusRequest\x1a\x16.plugin.StatusResponseB\"Z github.com/recitelabs/grpc/protob\x06proto3"
 
 var (
 	file_payment_proto_rawDescOnce sync.Once

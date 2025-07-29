@@ -6,7 +6,7 @@
 // - protoc             v3.12.4
 // source: payment.proto
 
-package plugin
+package proto
 
 import (
 	context "context"

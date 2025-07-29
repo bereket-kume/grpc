@@ -7,7 +7,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/recitelabs/grpc/github.com/recitelabs/grpc/plugin"
+	pb "github.com/recitelabs/grpc/proto"
 	"google.golang.org/grpc"
 )
 
