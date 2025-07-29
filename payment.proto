@@ -1,0 +1,32 @@
+// proto/plugin.proto
+syntax = "proto3";
+
+package plugin;
+
+option go_package = "github.com/recitelabs/grpc/plugin";
+
+service BankPlugin {
+  rpc SendPayment(PaymentRequest) returns (PaymentResponse);
+  rpc CheckStatus(StatusRequest) returns (StatusResponse);
+}
+
+message PaymentRequest {
+  string amount = 1;
+  string currency = 2;
+  string account_number = 3;
+  string recipient_name = 4;
+}
+
+message PaymentResponse {
+  bool success = 1;
+  string transaction_id = 2;
+  string message = 3;
+}
+
+message StatusRequest {
+  string transaction_id = 1;
+}
+
+message StatusResponse {
+  string status = 1; // e.g. "pending", "completed", "failed"
+}
